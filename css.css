@@ -1,0 +1,10 @@
+.red-stripe{
+    display: flex;
+    width: 3000px;
+    height: 20px;
+    background-color: red;
+}
+.container0{
+        width: 900px;
+        height: 25px;
+    }
