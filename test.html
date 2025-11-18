@@ -37,6 +37,7 @@
         }
         .aginfo div{
             text-align: center;
+            justify-content: center;
             padding: 10px;
             
         }
@@ -46,7 +47,38 @@
             grid-template-columns: auto auto auto auto;
             background-color: cyan;
             padding: 20px; 
+        }
+        .agbody div{
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
 
+        }
+
+        /* .financiamiento{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: auto;
+            width: 200px;
+            height: 500px;
+            font-size: 25px;
+            
+            background-color: beige;
+            padding: 20px;
+        } */
+
+        .cotizacion{
+            display: grid;
+            
+            align-items: center;
+            justify-content: center;
+            width: 1000px;
+            height: 500px;
+            font-size: 25px;
+            
+            background-color: beige;
+            padding: 20px;
         }
 
     </style>
@@ -67,15 +99,15 @@
 
 
     <div class="aginfo">
-        <div class="video">1</div>
-        <div class="marquesina">2</div>
-        <div class="map">3</div>
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/COVS45_UiU4?si=a6b2DswfF_sD38Hi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video></div>
+        <div class="marquesina"><h2>Marquesina: Autos personales, deportivos, de lujo, SUVS, y Minivans, Pickups y Comerciales, Hibridos </h2></div>
+        <div class="map"><img src="imgs/Screenshot from 2025-11-17 18-14-42.png" alt="" width="560px" height="315px"></div>
     </div>
 
 
 <div class="agbody">
-    <div>1</div>
-    <div>2</div>
+    <div><img src="imgs/logohonda.jpg" alt="" width="112px" height="63px" ></div>
+    <div><img src="imgs/" alt=""></div>
     <div>3</div>
     <div>4</div>
     <div>5</div>
@@ -85,6 +117,53 @@
    
 
 </div>
+<form action="cotizacion" class="cotizacion">
+<div class="formulario">
+    <label for="Nombre">Nombre Completo
+        <input type="text" id="name">
+    </label>
+    <br>
+     <label for="Correo">Correo Electronico
+        <input type="email" id="email">
+    </label>
+</div>
+
+<div class="financiamiento">
+   <input type="radio" id="contado" name="financiamiento" value="contado">
+   <label for="contado">Contado</label>
+    <br>
+    <input type="radio" id="credito" name="financiamiento" value="credito">
+   <label for="credito">Credito</label>
+    <br>
+</div>
+
+<div class="verificacion">
+    <input type="checkbox" id="ac" name="ac" value="6500">
+    <label for="ac">Aire acondicionado($6500)</label>
+    <br>
+     <input type="checkbox" id="gps" name="gps" value="2500">
+    <label for="gps">GPS($2500)</label>
+    <br>
+     <input type="checkbox" id="insurance" name="insurance" value="1500">
+    <label for="insurance">Seguro($15000)</label>
+    <br>
+     <input type="checkbox" id="quemacoco" name="quemacoco" value="9000">
+    <label for="quemacoco">Quemacoco($9000)</label>
+    <br>
+     <input type="checkbox" id="backcam" name="backcam" value="7500">
+    <label for="backcam">Camara trasera($7500)</label>
+    <br>
+     <input type="checkbox" id="ac" name="ac" value="1000">
+    <label for="ac">Aire acondicionado($1000)</label>
+    <br>
+
+
+</div>
+
+<div>
+
+</div>
+</form>
 
 </body>
 </html>
