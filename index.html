@@ -4,54 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia-autos</title>
- 
+ <link rel="stylesheet" href="css.css">
 </head>
-<link rel="stylesheet" href="css.css">
-
-<style>
-    .grid{
-        display: grid;
-        grid-gap: 25px;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
-        grid-area: "video   marquesina  marquesina  mapa"
-                   "imgNHonda   imgNissan   imgToyota   imgMazda" 
-                   "imgHyundai  imgKia  imgMitsubishi   imgSuzuki";
-    }
-    .grid .video{
-        background-color: cyan;
-        grid-column-start: video;
-        grid-column-end: video;
-    }
-   
-</style>
-
 
 <body>
-<div class="grid">
-    <hr>
-    <h2 class="head">P[agina HTML</h2>
-    <hr>
-
-    <hr class="red-stripe">
-
-    <hr>
-    <h1 class="title">AGENCIA DE AUTOS</h1>
-    <hr>
-
-    <hr class="red-stripe">
-
-    <div class="container0">
-
+    
+ <div class="title">
+        <h1>IDAI</h1>
     </div>
 
+    <hr class="red-stripe">
+
+     <div class="agency">
+        <h1>Agencia de autos</h1>
+    </div>
+
+    <hr class="red-stripe">
+
+
+    <div class="aginfo">
+        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/COVS45_UiU4?si=a6b2DswfF_sD38Hi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></video></div>
+        <div class="marquesina"><h2>Marquesina: Autos personales, deportivos, de lujo, SUVS, y Minivans, Pickups y Comerciales, Hibridos </h2></div>
+        <div class="map"><img src="imgs/Screenshot from 2025-11-17 18-14-42.png" alt="" width="560px" height="315px"></div>
+    </div>
+
+
+<div class="agbody">
+    <div>
+    <div><img src="imgs/logohonda.jpg" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autohonda.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logonissan.jpg" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autonissan.jpeg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logotoyota.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autotoyota.png" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logomazda.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/automazda.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logohyundai.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autohiunday.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logokia.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/logokia.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logomitsubishi.jpg" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/automitsubishi.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logosuzuki.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autosuzuki.jpg" alt="" width="112px" height="63px"></div>
+    </div>
     
+   
+
+</div>
+
+<form action="cotizacion" class="cotizacion">
+<div class="formulario">
+    <label for="Nombre">Nombre Completo
+        <input type="text" id="name">
+    </label>
+    <br>
+     <label for="Correo">Correo Electronico
+        <input type="email" id="email">
+    </label>
+</div>
+
+<div class="financiamiento">
+   <input type="radio" id="contado" name="financiamiento" value="contado" checked>
+   <label for="contado">Contado</label>
+    <br>
+    <input type="radio" id="credito" name="financiamiento" value="credito">
+   <label for="credito">Credito</label>
+    <br>
+</div>
+
+<div class="verificacion">
+    <input type="checkbox" id="ac" name="verif" value="6500">
+    <label for="ac">Aire acondicionado($6500)</label>
+    <br>
+     <input type="checkbox" id="gps" name="verif" value="2500">
+    <label for="gps">GPS($2500)</label>
+    <br>
+     <input type="checkbox" id="insurance" name="verif" value="1500">
+    <label for="insurance">Seguro($15000)</label>
+    <br>
+     <input type="checkbox" id="quemacoco" name="verif" value="9000">
+    <label for="quemacoco">Quemacoco($9000)</label>
+    <br>
+     <input type="checkbox" id="backcam" name="verif" value="7500">
+    <label for="backcam">Camara trasera($7500)</label>
+    <br>
+     <input type="checkbox" id="frontcam" name="verif" value="7500">
+    <label for="frontcam">Camara frontal($7500)</label>
+    <br>
+</div>
+
+<div>
+    <label for="cars">Seleccion del auto</label>
+    <select name="cars" id="cars">
+        <option value="500000">Honda</option>
+        <option value="600000">Nissan</option>
+        <option value="550000">Toyota</option>
+        <option value="700000">Mazda</option>
+        <option value="775000">Hyundai</option>
+        <option value="500000">Kia</option>
+        <option value="650000">Mitsubishi</option>
+        <option value="700000">Suzuki</option>
+    </select>
+<br>
+
+<input type="text" id="calculate" name="calculate" value="0" readonly>
+    <input type="button" value="submit" onclick="Calculate()">
 </div>
 
 
+</form>
 
 
+<footer>
 
+</footer>
+<hr class="red-stripe">
+<h3>Fernando Vargas Clemente: 45817</h3>
 
 
 

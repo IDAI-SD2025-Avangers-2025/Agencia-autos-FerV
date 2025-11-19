@@ -32,7 +32,7 @@
         .aginfo{
             display: grid;
             grid-template-columns: auto auto auto;
-            background-color: lime;
+            background-color: beige;
             padding: 20px;
         }
         .aginfo div{
@@ -45,7 +45,7 @@
         .agbody{
             display: grid;
             grid-template-columns: auto auto auto auto;
-            background-color: cyan;
+            background-color: red;
             padding: 20px; 
         }
         .agbody div{
@@ -106,17 +106,50 @@
 
 
 <div class="agbody">
-    <div><img src="imgs/logohonda.jpg" alt="" width="112px" height="63px" ></div>
-    <div><img src="imgs/" alt=""></div>
-    <div>3</div>
-    <div>4</div>
-    <div>5</div>
-    <div>6</div>
-    <div>7</div>
-    <div>8</div>
+    <div>
+    <div><img src="imgs/logohonda.jpg" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autohonda.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logonissan.jpg" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autonissan.jpeg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logotoyota.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autotoyota.png" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logomazda.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/automazda.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logohyundai.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autohiunday.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logokia.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/logokia.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logomitsubishi.jpg" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/automitsubishi.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+
+    <div>
+    <div><img src="imgs/logosuzuki.png" alt="" width="112px" height="63px"></div>
+    <div><img src="imgs/autosuzuki.jpg" alt="" width="112px" height="63px"></div>
+    </div>
+    
    
 
 </div>
+
 <form action="cotizacion" class="cotizacion">
 <div class="formulario">
     <label for="Nombre">Nombre Completo
@@ -138,32 +171,45 @@
 </div>
 
 <div class="verificacion">
-    <input type="checkbox" id="ac" name="ac" value="6500">
+    <input type="checkbox" id="ac" name="verif" value="6500">
     <label for="ac">Aire acondicionado($6500)</label>
     <br>
-     <input type="checkbox" id="gps" name="gps" value="2500">
+     <input type="checkbox" id="gps" name="verif" value="2500">
     <label for="gps">GPS($2500)</label>
     <br>
-     <input type="checkbox" id="insurance" name="insurance" value="1500">
+     <input type="checkbox" id="insurance" name="verif" value="1500">
     <label for="insurance">Seguro($15000)</label>
     <br>
-     <input type="checkbox" id="quemacoco" name="quemacoco" value="9000">
+     <input type="checkbox" id="quemacoco" name="verif" value="9000">
     <label for="quemacoco">Quemacoco($9000)</label>
     <br>
-     <input type="checkbox" id="backcam" name="backcam" value="7500">
+     <input type="checkbox" id="backcam" name="verif" value="7500">
     <label for="backcam">Camara trasera($7500)</label>
     <br>
-     <input type="checkbox" id="ac" name="ac" value="1000">
-    <label for="ac">Aire acondicionado($1000)</label>
+     <input type="checkbox" id="frontcam" name="verif" value="7500">
+    <label for="frontcam">Camara frontal($7500)</label>
     <br>
-
-
 </div>
 
 <div>
-
+    <label for="cars">Seleccion del auto</label>
+    <select name="cars" id="cars">
+        <option value="honda">Honda</option>
+        <option value="nissan">Nissan</option>
+        <option value="toyota">Toyota</option>
+        <option value="mazda">Mazda</option>
+        <option value="hyundai">Hyundai</option>
+        <option value="kia">Kia</option>
+        <option value="mitsubishi">Mitsubishi</option>
+        <option value="suzuki">Suzuki</option>
+    </select>
+<br>
+    <input type="button" value="submit" onclick="Calculate()">
 </div>
+
+
 </form>
+
 
 </body>
 </html>

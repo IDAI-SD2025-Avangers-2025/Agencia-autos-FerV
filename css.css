@@ -1,10 +1,77 @@
-.red-stripe{
-    display: flex;
-    width: 3000px;
-    height: 20px;
-    background-color: red;
-}
-.container0{
-        width: 900px;
-        height: 25px;
-    }
+        .title{
+            display: grid;
+            grid-template-columns: auto;
+            background-color: darkblue;
+            padding: 20px; 
+        }
+
+        h1{
+            text-align: center;
+        }
+        h3{
+           text-align: center; 
+        }
+        
+        .red-stripe{
+             display: flex;
+             height: 20px;
+             background-color: red;
+        }       
+        .agency{
+            display: grid;
+            grid-template-columns: auto;
+            background-color: darkblue;
+            padding: 20px; 
+        }
+
+        .aginfo{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: beige;
+            padding: 20px;
+        }
+        .aginfo div{
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+            
+        }
+
+        .agbody{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            background-color: red;
+            padding: 20px; 
+        }
+        .agbody div{
+            text-align: center;
+            justify-content: center;
+            padding: 10px;
+
+        }
+
+        /* .financiamiento{
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: auto;
+            width: 200px;
+            height: 500px;
+            font-size: 25px;
+            
+            background-color: beige;
+            padding: 20px;
+        } */
+
+        .cotizacion{
+            display: grid;
+            
+            align-items: center;
+            justify-content: center;
+            width: 1000px;
+            height: 500px;
+            font-size: 25px;
+            
+            background-color: beige;
+            padding: 20px;
+        }
